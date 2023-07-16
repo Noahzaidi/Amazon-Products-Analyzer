@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication
 
-from GUI import ProductAnalyzer
+from GUI.GUI import ProductAnalyzer
 
 
 
