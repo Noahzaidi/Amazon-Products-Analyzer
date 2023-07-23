@@ -1,5 +1,5 @@
 # Amazon-Products-Analyzer
-Amazon FBA GUI App. Imports &amp; enrichs Jungle Scout CSV data, calculates insights like competitor count, sales, reviews. Metrics include unique competitors, zero-sales products, new entries, LQS, brands, top/bottom competitor performance, average rank, fees, and revenue trends.
+Amazon FBA GUI App. Imports &amp; enrichs Jungle Scout CSV data (in both CSV or excel format), calculates insights like competitor count, sales, reviews. Metrics include unique competitors, zero-sales products, new entries, LQS, brands, top/bottom competitor performance, average rank, fees, and revenue trends.
 
 GUI App to analyze Amazon products FBA (Fulfillment by Amazon) in Jungle Scout CSV format. 
 
