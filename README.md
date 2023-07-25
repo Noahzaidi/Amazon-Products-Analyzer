@@ -1,9 +1,9 @@
 # Amazon-Products-Analyzer
 Amazon FBA GUI App. Imports &amp; enrichs Jungle Scout CSV data (in both CSV or excel format), calculates insights like competitor count, sales, reviews. Metrics include unique competitors, zero-sales products, new entries, LQS, brands, top/bottom competitor performance, average rank, fees, and revenue trends.
 
-GUI App to analyze Amazon products FBA (Fulfillment by Amazon) in Jungle Scout CSV format. 
-
 The application allows users to import product data from an Excel file, add additional data to the existing dataset, and analyze the data to obtain various metrics and insights.
+
+# Features
 
 Importing Excel File: Users can select an Excel file containing product data to import into the application.
 
@@ -36,7 +36,7 @@ sales_velocity_score is the ratio of sales_velocity to total sales (sales_veloci
 The function returns the calculated POS value. This value can be used to assess the potential of a product on the Amazon FBA marketplace in terms of its listing quality, reviews, rating, and sales velocity.
 
 
-The calculate_ci method is a function defined in the ProductAnalyzer class, and calculates the Competition Index (CI) of a given product in a DataFrame. The function takes as arguments the DataFrame df and an index corresponding to the row of the product for which the CI will be calculated. Here is a step-by-step description of how CI is calculated:
+The calculate_ci method calculates the Competition Index (CI) of a given product in a DataFrame. The function takes as arguments the DataFrame df and an index corresponding to the row of the product for which the CI will be calculated. Here is a step-by-step description of how CI is calculated:
 
 Gets the product row in the DataFrame using the provided index.
 Calculates rank_score as 1 - (row['Rank'] / (row['Rank'] + 1)).
@@ -45,7 +45,7 @@ Calculates price_var_score as 1 - abs(row['Price'] - df['Price'].mean()) / df['P
 Finally, it calculates the CI as the product of rank_score, sellers_score, and price_var_score.
 The competition index (CI) is a measure of how a product performs compared to its competitors in terms of range, number of sellers, and price variance. A higher CI indicates greater competitiveness in the market.
 
-In summary, the calculate_ci function calculates a product's competition index using the product's rank, number of sellers, and price variance relative to the mean and standard deviation of the prices of all products in the DataFrame.
+The calculate_ci function calculates a product's competition index using the product's rank, number of sellers, and price variance relative to the mean and standard deviation of the prices of all products in the DataFrame.
 
 calculate_success_index is not exactly a "success rate" but rather a "success index" that represents how well a particular product performs compared to other products in the data set, considering multiple factors. The function takes a row of the DataFrame (representing a product) as an argument and calculates its success rate using the following logic:
 
